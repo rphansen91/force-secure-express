@@ -1,15 +1,39 @@
 {
   "name": "force-secure-express",
   "version": "1.0.0",
-  "description": "",
+  "description": "Express middleware to redirect insecure http requests to https.",
   "main": "index.js",
   "scripts": {
-    "test": "jest ./src --coverage"
+    "test": "jest ./src && codecov"
   },
-  "keywords": [],
-  "author": "",
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 95,
+        "functions": 95,
+        "lines": 95,
+        "statements": 95
+      }
+    }
+  },
+  "keywords": [
+    "redirect",
+    "express",
+    "ssl",
+    "middleware",
+    "https",
+    "http"
+  ],
+  "author": "Ryan P. Hansen",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rphansen91/force-secure-express"
+  },
   "license": "ISC",
   "devDependencies": {
+    "codecov": "^3.1.0",
     "jest": "^23.6.0"
   }
 }

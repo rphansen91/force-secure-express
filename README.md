@@ -7,7 +7,7 @@
 
 ## Description
 
-Redirect insecure http requests to https.
+Express middleware to redirect insecure http requests to https.
 
 ## Install
 
