@@ -1,6 +1,6 @@
 {
   "name": "force-secure-express",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Express middleware to redirect insecure http requests to https.",
   "main": "index.js",
   "scripts": {
